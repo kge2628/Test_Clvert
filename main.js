@@ -21,11 +21,12 @@ class Player {
     this.velocity = { x: 0, y: 0 };
     this.width = 40;
     this.height = 30;
+    this.image = new Image();
+    this.image.src = 'https://i.namu.wiki/i/1v2B9r_8jBMhzuQUXlb-QpLkV7yvYNNHyK-Q8vHkHf1Of2tFHEOjZp9PYqhSEPvEXyIzp3bVp_ON8jwRO1bLCw.webp';
   }
 
   draw() {
-    ctx.fillStyle = "yellow";
-    ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    ctx.drawImage(this.image, this.position.x, this.position.y, this.width, this.height);
   }
 
   update() {

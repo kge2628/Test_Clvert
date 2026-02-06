@@ -7,8 +7,8 @@ This document outlines the plan for creating a 2D "Flappy Bird" style game. The 
 
 ## Core Features
 
-*   **Player Character:** A controllable character (a "bird") that moves upwards with each flap (user input).
-*   **Physics:** A simple physics engine with constant gravity pulling the bird down.
+*   **Player Character:** A controllable character represented by an image that moves upwards with each flap (user input).
+*   **Physics:** A simple physics engine with constant gravity pulling the character down.
 *   **Obstacles:** Pipes that move from right to left, with a gap for the player to pass through.
 *   **Game Loop:** The core of the game, responsible for updating the game state and rendering the graphics on each frame.
 *   **Controls:** Mouse click or key press for player to "flap" upwards.
@@ -17,17 +17,16 @@ This document outlines the plan for creating a 2D "Flappy Bird" style game. The 
 
 ## Design and Style
 
-*   **Visuals:** The game will have a simple, clean aesthetic inspired by the provided link. The bird and pipes will be easily recognizable.
+*   **Visuals:** The game will have a simple, clean aesthetic. The player character is an image provided by the user, and the pipes will be easily recognizable.
 *   **Layout:** The game will be displayed within a fixed-size canvas centered on the page.
-*   **Color Palette:** A vibrant color palette will be used for the background, bird, and pipes to create an engaging visual experience.
+*   **Color Palette:** A vibrant color palette will be used for the background and pipes to create an engaging visual experience.
 
 ## Implementation Plan
 
 1.  **HTML Setup:** The existing `<canvas>` element in `index.html` will be used.
 2.  **Initial Styling:** The existing CSS will be used to center the canvas.
 3.  **Game Logic Overhaul (`main.js`):**
-    *   Modify the `Player` class to have vertical "flap" movement and be constantly affected by gravity.
-    *   Remove the `Platform` class.
+    *   Modify the `Player` class to use an image for the character, have vertical "flap" movement, and be constantly affected by gravity.
     *   Create a `Pipe` class to generate pairs of pipes (top and bottom) with a consistent gap.
     *   Implement logic to continuously generate and scroll pipes from right to left.
     *   Update the main game loop (`animate`) to handle pipe generation, movement, and drawing.
@@ -37,5 +36,5 @@ This document outlines the plan for creating a 2D "Flappy Bird" style game. The 
 
 ## Current Task
 
-*   Update the `blueprint.md` file.
-*   Overhaul `main.js` to implement the Flappy Bird game mechanics.
+*   The player character has been updated to use the image specified by the user.
+*   The `blueprint.md` file has been updated to reflect this change.
