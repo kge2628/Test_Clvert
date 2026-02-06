@@ -22,7 +22,7 @@ class Player {
     this.width = 40;
     this.height = 30;
     this.image = new Image();
-    this.image.src = 'https://i.namu.wiki/i/1v2B9r_8jBMhzuQUXlb-QpLkV7yvYNNHyK-Q8vHkHf1Of2tFHEOjZp9PYqhSEPvEXyIzp3bVp_ON8jwRO1bLCw.webp';
+    this.image.src = 'jumping_character.jpg';
   }
 
   draw() {
