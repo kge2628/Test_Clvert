@@ -1,4 +1,4 @@
-<style>
+
 /* 기본 설정 */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body { font-family: 'Noto Sans KR', sans-serif; line-height: 1.6; color: #333; }
@@ -68,4 +68,3 @@ footer { background: #333; color: #fff; padding: 40px 5%; text-align: center; }
     .hero h1 { font-size: 2rem; }
     .grid-container { grid-template-columns: 1fr; } /* 모바일: 1열 */
 }
-</style>

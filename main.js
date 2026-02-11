@@ -1,4 +1,4 @@
-<script>
+
 // 간단한 스크롤 애니메이션 및 토글 메뉴
 function toggleMenu() {
     alert('모바일 메뉴 버튼이 클릭되었습니다. 여기에 사이드바 로직을 추가할 수 있습니다.');
@@ -13,4 +13,3 @@ window.addEventListener('scroll', () => {
         header.style.boxShadow = 'none';
     }
 });
-</script>
